@@ -9,6 +9,11 @@ function LandingPage() {
           return (
             <>
               <div className="masker">
+                <div className="w-fit flex items-end overflow-hidden">
+                  {index === 1 && (
+                    <div className="mr-[1vw] w-[8vw] rounded-md h-[5.7vw] -top-[1.2vw] relative bg-green-500"></div>
+                  )}
+                </div>
                 <h1 className='uppercase text-[7vw] leading-[6vw] text-wrap tracking-tighter font-semibold leading-none font-["Founders_Grotesk_X-Condensed"] '>
                   {item}
                 </h1>
