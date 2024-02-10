@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function LandingPage() {
   return (
     <div className="w-full h-screen pt-1">
@@ -8,7 +9,7 @@ function LandingPage() {
           return (
             <>
               <div className="masker">
-                <h1 className='uppercase text-[7vw] leading-[6vw] text-wrap tracking-tighter font-semibold leading-none font-["Founders_Grotesk"] '>
+                <h1 className='uppercase text-[7vw] leading-[6vw] text-wrap tracking-tighter font-semibold leading-none font-["Founders_Grotesk_X-Condensed"] '>
                   {item}
                 </h1>
               </div>
@@ -20,11 +21,14 @@ function LandingPage() {
         {[
           "For Public and private Companies",
           "From the first pitch to IPO",
-        ].map((item, index) => (
+        ].map((item) => (
           <p className="text-md font-light tracking-tight leading-none">
             {item}
           </p>
         ))}
+        <div className="start">
+          <div className="px-4 py-2 border-2 font-light border-zinc-400 capitalize rounded-full">Start the project</div>
+        </div>
       </div>
     </div>
   );
